@@ -1,6 +1,40 @@
 :root{
-    --color-bg-1: #7e8aa2
-    --color-bg-2: #d6dae2
-    --color-bg-3: #ffff
+    --bg-thema-1: #7e8aa2
+    --bg-thema-2: #d6dae2
+    --bg-thema-3: #ffff
 }
-/* font-family: 'Poppins', sans-serif; */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .bg-tema-principal{
+    background-color: var(--bg-thema-1);
+} */
+
+
+.fa-brands{
+    color: #fff;
+}
+.fa-brands:hover{
+    scale: 1.5;
+}
+.fa-youtube:hover{
+    color:#c4302b;
+}
+.fa-twitter:hover{
+    color:#00ACEE ;
+}
+.text:hover{
+    background: linear-gradient(45deg, #fed373 20%,
+    #f15245,
+    #d92e7f,
+    #515ecf);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-facebook:hover{
+    color: #3B5998;
+
+}
