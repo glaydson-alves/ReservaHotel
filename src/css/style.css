@@ -2,19 +2,28 @@
     --bg-thema-1: #7e8aa2;
     --bg-thema-2: #d6dae2;
     --bg-thema-3: #ffff;
+    --bg-thema-outline: #535c6e;
+
+    /* mudar a paleta de cores */
 }
 
 *{
     font-family: 'Poppins', sans-serif;
 }
 
-.bg-body{
-    background-color: red;
+
+.tema{
+    background-color: var(--bg-thema-1);
 }
 
-.btn-submit{
+.btn-buscar{
     background: var(--bg-thema-2);
     border: 1px solid var(--bg-thema-1);
+}
+.btn-buscar:hover{
+    background-color: var(--bg-thema-1);
+    color: var(--bg-thema-3);
+    outline: 1px solid var(--bg-thema-outline);
 }
 
 .fa-brands{
@@ -34,11 +43,10 @@
     #f15245,
     #d92e7f,
     #515ecf);
-    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .fa-facebook:hover{
     color: #3B5998;
-
 }
