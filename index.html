@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;800&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Reseva Hotel</title>
 </head>
 <body>
     <header>
         <!-- NAVEGAÇÃO COM LOGO -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body"  data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                 <img src="src/img/icon.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
@@ -26,16 +26,16 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link" href="#">INFORMAÇÃO</a>
-                      <a class="nav-link" href="#">INFORMAÇÃO</a>
-                      <a class="nav-link" href="#">INFORMAÇÃO</a>
+                      <a class="nav-link" href="#">Sobre</a>
+                      <a class="nav-link" href="#">Contatos</a>
+                      <a class="nav-link" href="#">Cadastros</a>
                     </div>
                 </div>
             </div>
         </nav>
 
         <!-- CAROUSEL COM AS IMAGENS E PROMOÇOES -->
-        <section class="shadow">
+        <section class="shadow m-3">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -47,11 +47,11 @@
     
             <div class="carousel-inner">
               <div class="carousel-item active bloco">
-                <img src="src/img/img-caroussel/capa-sauiperesorts.jpg" class="d-block w-100" alt="">
+                <img src="src/img/img-caroussel/16298577_575738222621394_5797609202602928152_n.jpg" class="d-block w-100" alt="">
               </div>
     
               <div class="carousel-item bloco">
-                <img src="src/img/img-caroussel/16298577_575738222621394_5797609202602928152_n.jpg" class="d-block w-100" alt="">
+                <img src="src/img/img-caroussel/capa-sauiperesorts.jpg" class="d-block w-100" alt="">
               </div>
     
               <div class="carousel-item bloco">
@@ -77,29 +77,71 @@
     <main>
       <!-- FORMULÁRIO HORIZONTAL -->
       <section>
-        <form action="" class="d-flex">
-          <!-- destino -->
-          <div class="form-floating mb-3">
-            <input type="text" name="" id="">
-          </div>
-          <!-- datas de entrada e saida -->
-          <div class="form-floating mb-3">
-            <input type="date" name="" id="">
 
-            <input type="date" name="" id="">
+        <form action="" class="row g-2 m-3">
+
+          <!-- datas de entrada e saida -->
+          <div class="col-lg-2 form-floating mb-3">
+            <input type="date" class="form-control" placeholder="Entrada">
+            <label for="entrada">Entrada</label>
+          </div>
+          <div class="col-lg-2 form-floating mb-3">
+            <input type="date" class="form-control" placeholder="Entrada">
+            <label for="entrada">Saída</label>
           </div>
           <!-- quantidade de pessoas e quartos -->
-          <div class="input-group mb-3">
-            <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
-            <div class="form-floating">
-              <input type="number" class="form-control" id="floatingInputGroup1" placeholder="quartos">
-              <label for="floatingInputGroup1">Quartos</label>
-            </div>
+          <div class="col-lg-2 form-floating mb-3">
+            <input type="number" class="form-control" placeholder="quartos">
+            <label for="quartos"><i class="fa-solid fa-mattress-pillow"></i> Quartos</label>
           </div>
-          <button type="submit"></button>
+          <div class="col-lg-2 form-floating mb-3">
+            <input type="number" class="form-control" placeholder="adultos">
+            <label for="adultos"><i class="fa-solid fa-user"></i> Adultos</label>
+          </div>
+          <div class="col-lg-2 form-floating mb-3">
+            <input type="number" class="form-control" placeholder="crianças">
+            <label for="crianças"><i class="fa-solid fa-user"></i> Crianças</label>
+          </div>
+          <button type="submit" class="col-lg-2 mb-3 rounded btn-submit">Buscar</button>
 
         </form>
+      </section>
 
+      <section class="row">
+        <div class="col-lg-6">
+          <div class="m-3 p-1 border rounded">
+            <img src="src/img/img-promo/16298577_575738222621394_5797609202602928152_n.jpg" alt="" class="w-100">
+            <div>
+              <h2>Apartamentos Standard</h2>
+              <ul>
+                <li>Com 24 m²</li>
+                <li>Cama de Casal ou de Solteiro</li>
+                <li>Secador de Cabelos</li>
+                <li>Telefone</li>
+                <li>Colchão Serta</li>
+                <li>Vista Cidade</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="m-3">
+            <img src="src/img/img-promo/5833ac960d86472e9d7162e61caa0bde.jpg" alt="" class="w-100">
+          </div>
+
+          <div class="m-3">
+            <img src="src/img/img-promo/609964968fe54f9aa4ad6b64e93e43e8.jpg" alt="" class="w-100">
+          </div>
+
+          <div class="m-3">
+            <img src="src/img/img-promo/a2cbe2a93f47412788599d1d9f40d67d.jpg" alt="" class="w-100">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="m-3">
+          <img src="src/img/img-caroussel/promoção.jpg" alt="">
+          </div>
+        </div>
       </section>
 
 
