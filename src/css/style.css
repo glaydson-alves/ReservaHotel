@@ -3,6 +3,7 @@
     --bg-thema-2: #d6dae2;
     --bg-thema-3: #ffff;
     --bg-thema-outline: #535c6e;
+    --bg-thema-botao:#68738a;
 
     /* mudar a paleta de cores */
 }
@@ -11,20 +12,46 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
+body{
+   background-color: var(--bg-thema-2); 
+}
 .tema{
     background-color: var(--bg-thema-1);
 }
 
+
 .btn-buscar{
-    background: var(--bg-thema-2);
+    background: var(--bg-thema-1);
     border: 1px solid var(--bg-thema-1);
 }
 .btn-buscar:hover{
-    background-color: var(--bg-thema-1);
+    background-color: var(--bg-thema-botao);
     color: var(--bg-thema-3);
     outline: 1px solid var(--bg-thema-outline);
 }
+
+/* MAIN */
+
+.sobre{
+    /* background-image: url(../img/hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* opacity: 0.7; */
+    
+    width: 100%;
+}
+/* EFEITO NOS CARDS */
+.card-text{
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.card:hover .texto{
+    opacity: 1;
+}
+.card:hover .imagem{
+    opacity: 0.5;
+}
+/* ************ */
 
 .fa-brands{
     color: #fff;
