@@ -15,7 +15,7 @@
 <body>
     <header>
         <!-- NAVEGAÇÃO COM LOGO -->
-        <nav class="navbar navbar-expand-lg bg-body"  data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                 <img src="src/img/icon.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
@@ -84,24 +84,34 @@
           <div class="col-lg-2 form-floating mb-3">
             <input type="date" class="form-control" placeholder="Entrada">
             <label for="entrada">Entrada</label>
+            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
           </div>
+
           <div class="col-lg-2 form-floating mb-3">
             <input type="date" class="form-control" placeholder="Entrada">
             <label for="entrada">Saída</label>
+            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
           </div>
+
           <!-- quantidade de pessoas e quartos -->
           <div class="col-lg-2 form-floating mb-3">
             <input type="number" class="form-control" placeholder="quartos">
             <label for="quartos"><i class="fa-solid fa-mattress-pillow"></i> Quartos</label>
+            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
           </div>
+
           <div class="col-lg-2 form-floating mb-3">
             <input type="number" class="form-control" placeholder="adultos">
             <label for="adultos"><i class="fa-solid fa-user"></i> Adultos</label>
+            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
           </div>
+
           <div class="col-lg-2 form-floating mb-3">
             <input type="number" class="form-control" placeholder="crianças">
             <label for="crianças"><i class="fa-solid fa-user"></i> Crianças</label>
+            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
           </div>
+          
           <a href="src/page/pagina-2.html" class="btn col-lg-2 mb-3 rounded btn-buscar d-flex justify-content-center align-items-center">Buscar</a>
 
         </form>
@@ -207,12 +217,11 @@
         </div>
       </section>
 
-
+      <!-- LOCALIZAÇÃO -->
       <section>
         <div class="m-3">
-          <iframe class=" container-fluid d-flex" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9139707096647!2d-44.28122562614662!3d-2.534958438263466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e55f2459f7d%3A0x80dbc68cb443a9d!2sUnidade%20Integrada%20SESI%20%2F%20SENAI%20-%20Prof%C2%B0%20Raimundo%20Franco%20Teixeira!5e0!3m2!1spt-BR!2sbr!4v1692587661914!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+          <iframe class="container-fluid d-flex" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9139707096647!2d-44.28122562614662!3d-2.534958438263466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68e55f2459f7d%3A0x80dbc68cb443a9d!2sUnidade%20Integrada%20SESI%20%2F%20SENAI%20-%20Prof%C2%B0%20Raimundo%20Franco%20Teixeira!5e0!3m2!1spt-BR!2sbr!4v1692587661914!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
         </div>
-
       </section>
 
 
@@ -239,6 +248,8 @@
           <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
       </div>
   </footer>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/validacao.js"></script>
 </body>
 </html>

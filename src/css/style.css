@@ -15,20 +15,15 @@
 body{
    background-color: var(--bg-thema-2); 
 }
-.tema{
-    background-color: var(--bg-thema-1);
-}
-
-
 .btn-buscar{
     background: var(--bg-thema-1);
-    border: 1px solid var(--bg-thema-1);
+    border: 1px solid var(--bg-thema-botao);
 }
-.btn-buscar:hover{
-    background-color: var(--bg-thema-botao);
-    color: var(--bg-thema-3);
-    outline: 1px solid var(--bg-thema-outline);
+.btn-reserve{
+    background-color: var(--bg-thema-1);
+    border: 1px solid var(--bg-thema-botao);
 }
+
 
 /* MAIN */
 
@@ -37,11 +32,45 @@ body{
     background-repeat: no-repeat;
     background-size: cover; */
     /* opacity: 0.7; */
-    
     width: 100%;
 }
+.tema{
+    background-color: var(--bg-thema-1);
+}
+.voltar,
+.fa-circle-chevron-left{
+    color: var(--bg-thema-2);
+}
+.fa-brands{
+    color: #fff;
+}
+
+
+/* .erro{
+    display: none;
+    color: var(--bg-thema-3);
+    background-color: red;
+    border-radius: 0 5px 5px;
+} */
+
+/* >>>> EFEITOS <<<< */
+
+
+/* EFEITO BOTAO */
+.btn-buscar:hover{
+    background-color: var(--bg-thema-botao);
+    color: var(--bg-thema-3);
+    outline: 1px solid var(--bg-thema-outline);
+}
+.btn-reserve:hover{
+    background-color: var(--bg-thema-botao);
+    color: var(--bg-thema-3);
+    outline: 1px solid var(--bg-thema-outline);
+}
+/* --------------------- */
+
 /* EFEITO NOS CARDS */
-.card-text{
+.texto{
     opacity: 0;
     transition: opacity .2s linear;
 }
@@ -51,11 +80,9 @@ body{
 .card:hover .imagem{
     opacity: 0.5;
 }
-/* ************ */
+/* ----------------- */
 
-.fa-brands{
-    color: #fff;
-}
+/* REDES SOCIAIS */
 .fa-brands:hover{
     scale: 1.5;
 }
@@ -73,7 +100,8 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .fa-facebook:hover{
     color: #3B5998;
 }
+/* ----------------- */
+
