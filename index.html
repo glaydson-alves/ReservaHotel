@@ -82,34 +82,34 @@
 
           <!-- datas de entrada e saida -->
           <div class="col-lg-2 form-floating mb-3">
-            <input type="date" class="form-control" placeholder="Entrada">
+            <input id="entrada" type="date" class="form-control" placeholder="Entrada">
             <label for="entrada">Entrada</label>
-            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
+            <span id="validacao" class="d-flex justify-content-center erro d-none">campo obrigatório</span>
           </div>
 
           <div class="col-lg-2 form-floating mb-3">
             <input type="date" class="form-control" placeholder="Entrada">
             <label for="entrada">Saída</label>
-            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
+            <span class="d-flex justify-content-center erro d-none">campo obrigatório</span>
           </div>
 
           <!-- quantidade de pessoas e quartos -->
           <div class="col-lg-2 form-floating mb-3">
             <input type="number" class="form-control" placeholder="quartos">
             <label for="quartos"><i class="fa-solid fa-mattress-pillow"></i> Quartos</label>
-            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
+            <span class="d-flex justify-content-center erro d-none">campo obrigatório</span>
           </div>
 
           <div class="col-lg-2 form-floating mb-3">
             <input type="number" class="form-control" placeholder="adultos">
             <label for="adultos"><i class="fa-solid fa-user"></i> Adultos</label>
-            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
+            <span class="d-flex justify-content-center erro d-none">campo obrigatório</span>
           </div>
 
           <div class="col-lg-2 form-floating mb-3">
-            <input type="number" class="form-control" placeholder="crianças">
+            <input type="number" class="form-control" placeholder="crianças" id="crianca">
             <label for="crianças"><i class="fa-solid fa-user"></i> Crianças</label>
-            <!-- <span class="d-flex justify-content-center erro">campo obrigatório</span> -->
+            <span class="d-flex justify-content-center erro d-none" id="span_crianca">campo obrigatório</span>
           </div>
           
           <a href="src/page/pagina-2.html" class="btn col-lg-2 mb-3 rounded btn-buscar d-flex justify-content-center align-items-center">Buscar</a>
