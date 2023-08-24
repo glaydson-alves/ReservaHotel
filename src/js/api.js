@@ -1,15 +1,15 @@
-let linha = document.querySelector("#linha")
+let tabela = document.querySelector("#tabela")
 
 // async = é uma forma que o js tem de transformar uma função sícrona em assíncrona, muito utilizada em APIs
 async function carregarDados(){
     const url = "https://64d2a382f8d60b1743624173.mockapi.io/hotel"
 
-    const resultado = await fetch(url)
+    const resultado = await fetch (url)
     // await = esperar a resposta, so pode ser usada se a função for async
     // fetch = procura, busca
     const dados = await resultado.json()
     // Estamos convertendo todos os dados que estão vindo da api no formato json
-
+    console.log(dados)
     for (const item of dados) {
         // acessando as informações do vetor
         // *****CRIANDO ELEMENTOS EM HTML******
