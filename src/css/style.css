@@ -49,8 +49,7 @@ body{
 .erro{
     display: none;
     color: var(--bg-thema-3);
-    background-color: red;
-    border-radius: 0 5px 5px;
+    border-radius: 0 15px 15px;
 }
 
 /* >>>> EFEITOS <<<< */

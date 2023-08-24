@@ -28,7 +28,6 @@
                     <div class="navbar-nav">
                       <a class="nav-link" href="#">Sobre</a>
                       <a class="nav-link" href="#">Contatos</a>
-                      <a class="nav-link" href="#">Cadastros</a>
                     </div>
                 </div>
             </div>
@@ -84,32 +83,32 @@
           <div class="col-lg-2 form-floating mb-3">
             <input id="entrada" type="date" class="form-control" placeholder="Entrada">
             <label for="entrada">Entrada</label>
-            <span id="validacao" class="d-flex justify-content-center erro d-none">campo obrigatório</span>
+            <span id="validacao_entrada" class="d-flex justify-content-center bg-danger erro d-none">campo obrigatório</span>
           </div>
 
           <div class="col-lg-2 form-floating mb-3">
-            <input type="date" class="form-control" placeholder="Entrada">
-            <label for="entrada">Saída</label>
-            <span class="d-flex justify-content-center erro d-none">campo obrigatório</span>
+            <input id="saida" type="date" class="form-control" placeholder="saida">
+            <label for="saida">Saída</label>
+            <span id="validacao_saida" class="d-flex justify-content-center bg-danger erro d-none">campo obrigatório</span>
           </div>
 
           <!-- quantidade de pessoas e quartos -->
           <div class="col-lg-2 form-floating mb-3">
-            <input type="number" class="form-control" placeholder="quartos">
+            <input id="quartos" type="number" class="form-control" placeholder="quartos">
             <label for="quartos"><i class="fa-solid fa-mattress-pillow"></i> Quartos</label>
-            <span class="d-flex justify-content-center erro d-none">campo obrigatório</span>
+            <span id="validacao_quartos" class="d-flex justify-content-center bg-danger erro d-none">campo obrigatório</span>
           </div>
 
           <div class="col-lg-2 form-floating mb-3">
-            <input type="number" class="form-control" placeholder="adultos">
+            <input id="adultos" type="number" class="form-control" placeholder="adultos">
             <label for="adultos"><i class="fa-solid fa-user"></i> Adultos</label>
-            <span class="d-flex justify-content-center erro d-none">campo obrigatório</span>
+            <span id="validacao_adultos" class="d-flex justify-content-center bg-danger erro d-none">campo obrigatório</span>
           </div>
 
           <div class="col-lg-2 form-floating mb-3">
-            <input type="number" class="form-control" placeholder="crianças" id="crianca">
+            <input id="criancas" type="number" class="form-control" placeholder="crianças" id="crianca">
             <label for="crianças"><i class="fa-solid fa-user"></i> Crianças</label>
-            <span class="d-flex justify-content-center erro d-none" id="span_crianca">campo obrigatório</span>
+            <span id="validacao_criancas" class="d-flex justify-content-center bg-danger erro d-none" id="span_crianca">campo obrigatório</span>
           </div>
           
           <a href="src/page/pagina-2.html" class="btn col-lg-2 mb-3 rounded btn-buscar d-flex justify-content-center align-items-center">Buscar</a>
@@ -227,26 +226,29 @@
 
     </main>
 
-    <footer class="container-fluid bg-body-tertiary p-4 d-flex justify-content-between align-items-center" data-bs-theme="dark">
-      <div class="text-white">
-        <p>Av. Beira Mar, 2700 - Centro</p>
-        <p>São Luís / MA - Brasil</p>
-        <p>Telefone: (00) 3234-8000</p>
-        <p>Email: hotel@palace.com.br</p>
-      </div>
+    <footer class="container-fluid bg-body-tertiary p-4 text-center" data-bs-theme="dark">
+      <section class="row">
+          <div class="text-white col-lg-4 col-sm-12">
+              <p>Av. Beira Mar, 2700 - Centro</p>
+              <p>São Luís / MA - Brasil</p>
+              <p>Telefone: (00) 3234-8000</p>
+              <p>Email: hotel@palace.com.br</p>
+            </div>
+            
+            <div class="col-lg-4 col-sm-12 order-3">
+              <p class="text-white align-items-lg-end">Todos os direitos reservados &copy; 2023</p>
+            </div>
+            
       
-      <div class="d-flex align-items-lg-end">
-        <p class="text-white align-items-lg-end">Todos os direitos reservados &copy; 2023</p>
-      </div>
-      
+            <div class="col-lg-4 col-sm-12 order-2">
+              <p class="text-white text-center">Redes Sociais</p>
+                <a href="#"><i class="fa-brands fa-youtube p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram p-2 text "></i></a>
+                <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
+            </div>            
+      </section>        
 
-      <div>
-        <p class="text-white text-center">Redes Sociais</p>
-          <a href="#"><i class="fa-brands fa-youtube p-2"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter p-2"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram p-2 text "></i></a>
-          <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
-      </div>
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
