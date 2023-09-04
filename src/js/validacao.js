@@ -83,32 +83,18 @@ criancas.addEventListener("blur", ()=>{
     }
 })
 
-// let entrada = document.querySelector("#entrada")
-// let validacao = document.querySelector("#validacao")
 
-// entrada.addEventListener("blur", ()=>{
-//     if(entrada.value == "dd/mm/aaaa"){
-//         validacao.classList.remove("d-none")
-//         validacao.classList.add("d-block")
-//     }
-//     else{
-//         validacao.classList.remove("d-block")
-//         validacao.classList.add("d-none")
-//     }
-// })
+document.getElementById('submit').addEventListener('click', ()=>{
+    // Verifique se os campos estão vazios
+    const entrada = document.getElementById('entrada').value
+    const saida = document.getElementById('saida').value
+    const quartos = document.getElementById('quartos').value
+    const adultos = document.getElementById('adultos').value
+    const criancas = document.getElementById('criancas').value
 
+    if ( entrada === '' || saida === '' || quartos === '' || adultos === '' || criancas === '') {
+        alert('Por favor, preencha todos os campos.');
+        event.preventDefault(); // Impede o envio do formulário
+    }
+})
 
-
-// let crianca = document.querySelector("#crianca")
-// let span_crianca = document.querySelector("#span_crianca")
-
-// entrada.addEventListener("blur", ()=>{
-//     if(crianca.value == ""){
-//         span_crianca.classList.remove("d-none")
-//         span_crianca.classList.add("d-block")
-//     }
-//     else{
-//         span_crianca.classList.remove("d-block")
-//         span_crianca.classList.add("d-none")
-//     }
-// })

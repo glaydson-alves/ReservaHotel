@@ -40,28 +40,81 @@
                 <p class="ms-2 voltar">Voltar para o início</p>
             </a>
         </section>
-        <section>
+        <section class="container">
             <h1 class="text-success text-center">Reserva Concluída <i class="fa-solid fa-check"></i></h1>
-            <div class="card">
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Códigp</td>
-                            <td>Nome</td>
-                            <td>email</td>
-                            <td>Nascimento</td>
-                            <td>quarto</td>
-                            <td>Quantidade</td>
-                            <td>check-in</td>
-                            <td>check-out</td>
-                        </tr>
-                    </thead>
-                    <tbody  id="tabela">
 
-                    </tbody>
-                </table>
-                
+            <div class="row justify-content-center mt-5 mb-5">
+                <div class="col-lg-6 col-12">
+                  <h4>Dados Do Hospede</h4>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Código da Reserva</li>
+                    <li class="list-group-item text-center w-50" id="cod-reserva">Carregando...</li>
+                  </ul> 
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Nome</li>
+                    <li class="list-group-item text-center w-50" id="nome">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Email</li>
+                    <li class="list-group-item text-center w-50 text-break" id="email">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Telefone</li>
+                    <li class="list-group-item text-center w-50" id="tel">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Endereço</li>
+                    <li class="list-group-item text-center w-50" id="endereco">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Data de Nascimento</li>
+                    <li class="list-group-item text-center w-50" id="nasc">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Tipo de Quarto</li>
+                    <li class="list-group-item text-center w-50" id="tipo_quarto">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Quantidade de Pessoas</li>
+                    <li class="list-group-item text-center w-50" id="pessoas">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Check-in</li>
+                    <li class="list-group-item text-center w-50" id="in">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Check-out</li>
+                    <li class="list-group-item text-center w-50" id="out">Carregando...</li>
+                  </ul>
+        
+                </div>
+        
+                <div class="col-lg-5 mt-lg-0 mt-4">
+                  <h4>Dados Do Cartão</h4>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Número do Cartão</li>
+                    <li class="list-group-item text-center w-50">0000 0000 0000 0000</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Validade</li>
+                    <li class="list-group-item text-center w-50">08/23</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Parcelas</li>
+                    <li class="list-group-item text-center w-50">36x</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Forma de Pagamento</li>
+                    <li class="list-group-item text-center w-50" id="pagamento">Carregando...</li>
+                  </ul>
+                  <ul class="list-group-horizontal list-group">
+                    <li class="list-group-item fw-bolder w-50">Valor Total</li>
+                    <li class="list-group-item text-center w-50 lead" id="diaria">R$ 150</li>
+                  </ul>
+                </div>
+              
             </div>
+
         </section>
 
     </main>

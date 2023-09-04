@@ -1,52 +1,79 @@
-let tabela = document.querySelector("#tabela")
+async function fetchAndDisplayData() {
+    try {
+        const response = await fetch('https://64d2a382f8d60b1743624173.mockapi.io/hotel');
+        const data = await response.json();
 
-// async = é uma forma que o js tem de transformar uma função sícrona em assíncrona, muito utilizada em APIs
-async function carregarDados(){
-    const url = "https://64d2a382f8d60b1743624173.mockapi.io/hotel"
 
-    const resultado = await fetch (url)
-    // await = esperar a resposta, so pode ser usada se a função for async
-    // fetch = procura, busca
-    const dados = await resultado.json()
-    // Estamos convertendo todos os dados que estão vindo da api no formato json
-    console.log(dados)
-    for (const item of dados) {
-        // acessando as informações do vetor
-        // *****CRIANDO ELEMENTOS EM HTML******
-        const linha = document.createElement("tr")
-        const tdReserva = document.createElement("td")
-        const tdNome = document.createElement("td")
-        const tdEmail = document.createElement("td")
-        const tdNascimento = document.createElement("td")
-        const tdTipoQuarto = document.createElement("td")
-        const tdQuantPessoa = document.createElement("td")
-        const tdCheckIn = document.createElement("td")
-        const tdCheckOut = document.createElement("td")
+        const codReservaElement = document.querySelector('#cod-reserva');
+        if (codReservaElement) {
+            codReservaElement.textContent = data[0].codigo_reserva;
+        }
 
-        // Criando conteúdo nas colunas
-        tdReserva.textContent = item.codigo_reserva
-        tdNome.textContent = item.nome
-        tdEmail.textContent = item.email
-        tdNascimento.textContent = item.data_nascimento
-        tdTipoQuarto.textContent = item.tipo_quarto
-        tdQuantPessoa.textContent = item.quantidade_pessoas
-        tdCheckIn.textContent = item.data_check_in
-        tdCheckOut.textContent = item.data_check_out
+        const nomeElement = document.querySelector('#nome');
+        if (nomeElement) {
+            nomeElement.textContent = data[0].nome; 
+        }
 
-        //ADICIONANDO OS ELEMENTOS EM SUAS TAGS
-        linha.appendChild(tdReserva)
-        linha.appendChild(tdNome)
-        linha.appendChild(tdEmail)
-        linha.appendChild(tdNascimento)
-        linha.appendChild(tdTipoQuarto)
-        linha.appendChild(tdQuantPessoa)
-        linha.appendChild(tdCheckIn)
-        linha.appendChild(tdCheckOut)
-        //appendChild = adicione filhos
+        const emailElement = document.querySelector('#email');
+        if (emailElement) {
+            emailElement.textContent = data[0].email; 
+        }
 
-        tabela.appendChild(linha)
+        const telefoneElement = document.querySelector('#tel');
+        if (telefoneElement) {
+            telefoneElement.textContent = data[0].telefone; 
+        }
+        
+        const enderecoElement = document.querySelector('#endereco');
+        if (enderecoElement) {
+            enderecoElement.textContent = data[0].endereco; 
+        }
+
+        const nascElement = document.querySelector('#nasc');
+        if (nascElement) {
+            nascElement.textContent = data[0].data_nascimento; 
+        }
+
+        
+        const quartoElement = document.querySelector('#tipo_quarto');
+        if (quartoElement) {
+            quartoElement.textContent = data[0].tipo_quarto; 
+        }
+        
+        
+        const pessoasElement = document.querySelector('#pessoas');
+        if (pessoasElement) {
+            pessoasElement.textContent = data[0].quantidade_pessoas; 
+        }
+        
+        
+        const inElement = document.querySelector('#in');
+        if (inElement) {
+            inElement.textContent = data[0].data_check_in; 
+        }
+        
+        const outElement = document.querySelector('#out');
+        if (outElement) {
+            outElement.textContent = data[0].data_check_out; 
+        }
+        
+        
+        const pagamentoElement = document.querySelector('#pagamento');
+        if (pagamentoElement) {
+            pagamentoElement.textContent = data[0].tipo_pagamento; 
+        }
+        
+        
+        const diariaElement = document.querySelector('#diaria');
+        if (diariaElement) {
+            diariaElement.textContent = data[0].valor_diaria; 
+        }
+        
+
+
+    } catch (error) {
+        console.error('Erro ao buscar e exibir dados da API:', error);
     }
-    
 }
 
-carregarDados()
+window.onload = fetchAndDisplayData;
