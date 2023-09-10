@@ -11,33 +11,43 @@ nome.addEventListener("blur", ()=>{
 })
 
 
-let telefone = document.querySelector("#telefone")
+let telefoneInput = document.getElementById("telefone");
 
+// Adiciona um ouvinte de evento de entrada (input) para formatar o número em tempo real
+telefoneInput.addEventListener("keyup", function () {
+    // Remove todos os caracteres não numéricos
+    let numerosApenas = telefoneInput.value.replace(/\D/g, "")
 
-telefone.addEventListener('keyup', function(event){
-  if (event.keyCode != 32 && event.keyCode != 46){
-    let i = telefone.value.length
-    aux = telefone.value
+    // Formata o número no estilo "(xx) xxxxx-xxxx"
+    if (numerosApenas.length >= 2){
 
-    if(i == 0)
-    telefone.value = "(" + aux
-  
-    if(i == 2)
-    telefone.value = aux + ")"
-  
-    if(i == 8)
-    telefone.value = aux + "-"
-  }
+        let ddd = numerosApenas.slice(0, 2)
+        let parte1 = numerosApenas.slice(2, 7)
+        let parte2 = numerosApenas.slice(7, 11)
+
+        // Se o número for maior que 11 dígitos, ajusta as partes 1 e 2
+        if (numerosApenas.length > 11){
+
+            parte1 = numerosApenas.slice(2, 8)
+            parte2 = numerosApenas.slice(8, 12)
+        }
+
+        let numeroFormatado = `(${ddd}) ${parte1}-${parte2}`
+
+        // Define o valor do input como o número formatado
+        telefoneInput.value = numeroFormatado
+    }
 })
 
-let limiteTelefone = document.querySelector("#telefone")
-let limite = 13
 
-limiteTelefone.addEventListener("keyup", ()=>{
+// let limiteTelefone = document.querySelector("#telefone")
+// let limite = 15
 
-    limiteTelefone.setAttribute("maxlength", limite)
+// limiteTelefone.addEventListener("keyup", ()=>{
 
-})
+//     limiteTelefone.setAttribute("maxlength", limite)
+
+// })
 
 let email = document.querySelector("#email")
 
