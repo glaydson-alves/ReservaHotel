@@ -32,7 +32,7 @@ telefoneInput.addEventListener("keyup", function () {
             parte2 = numerosApenas.slice(8, 12)
         }
 
-        let numeroFormatado = `(${ddd}) ${parte1}-${parte2}`
+        let numeroFormatado = ( "(" + ddd + ")" + " " + parte1 + "-" + parte2)
 
         // Define o valor do input como o número formatado
         telefoneInput.value = numeroFormatado
