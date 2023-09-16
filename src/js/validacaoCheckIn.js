@@ -49,6 +49,7 @@ telefoneInput.addEventListener("keyup", function () {
 
 // })
 
+
 let email = document.querySelector("#email")
 
 email.addEventListener("keyup", function(){
