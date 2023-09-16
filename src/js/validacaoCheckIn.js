@@ -13,19 +13,19 @@ nome.addEventListener("blur", ()=>{
 
 let telefoneInput = document.getElementById("telefone");
 
-// Adiciona um ouvinte de evento de entrada (input) para formatar o número em tempo real
+
 telefoneInput.addEventListener("keyup", function () {
-    // Remove todos os caracteres não numéricos
+    
     let numerosApenas = telefoneInput.value.replace(/\D/g, "")
 
-    // Formata o número no estilo "(xx) xxxxx-xxxx"
+    /l
     if (numerosApenas.length >= 2){
 
         let ddd = numerosApenas.slice(0, 2)
         let parte1 = numerosApenas.slice(2, 7)
         let parte2 = numerosApenas.slice(7, 11)
 
-        // Se o número for maior que 11 dígitos, ajusta as partes 1 e 2
+    
         if (numerosApenas.length > 11){
 
             parte1 = numerosApenas.slice(2, 8)
@@ -34,7 +34,7 @@ telefoneInput.addEventListener("keyup", function () {
 
         let numeroFormatado = ( "(" + ddd + ")" + " " + parte1 + "-" + parte2)
 
-        // Define o valor do input como o número formatado
+        
         telefoneInput.value = numeroFormatado
     }
 })
